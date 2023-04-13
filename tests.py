@@ -70,7 +70,6 @@ class TestBooksCollector:
         collector.add_new_book('Горе от ума')
         collector.set_book_rating('Горе от ума', 7)
         collector.add_new_book('Евгений Онегин')
-
         specific_books = collector.get_books_with_specific_rating(7)
 
         assert len(specific_books) == 2 and \
